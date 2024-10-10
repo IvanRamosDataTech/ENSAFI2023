@@ -8,7 +8,12 @@ packages = [{include = "ensafi2023", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9.7"
+ipykernel = "^6.29.5"
+pandas = "^2.2.3"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]

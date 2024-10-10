@@ -42,7 +42,16 @@ $ poetry env use python3
 El entorno virtual será almacenado en el folder Caches/pypoetry de la instalacion global de Poetry en el sistema
 
 Para cambiar de entorno virtual manejado por Poetry
-poetry env use python
+poetry env use <python-version>
 
 Para eliminar todos los entornos virtuales asociados a tu proyecto, ejecuta el siguiente comando
 $ poetry env remove --all
+
+Para instalar nuevas dependencias en el proyecto
+$ poetry add <package-name>
+
+Para instalar dependencias con versiones esepecificas, un ejemplo seria
+$ poetry add requests==2.25.1 "beautifulsoup4<4.10"
+
+Para eliminar dependencias
+$ poetry remove <package-name>

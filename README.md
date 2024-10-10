@@ -26,3 +26,23 @@ $ poetry new ENSEFI2023 --src
 Este es un buen post para seguir las instrucciones de como utilizar poetry
 https://realpython.com/dependency-management-python-poetry/
 
+# Trabajando con Poetry
+
+Para Visualizar todos los entornos virtuales que Poetry administra en tu proyecto
+$ poetry env list
+
+Para checar el entorno virtual actual en el que Poetry esta trabajando
+$ cd  src/ensafi2023 
+$ poetry env info --path
+
+Podemos utilizar la herramienta de entornos virtuales de Poetry para crear differentes entornos virtuales con differentes configuraciones y versiones de Python para probar nuestra applicacion bajo diferentes circunstancias.
+Para crear un entorno vitual que será administrado automaticamente por Poetry, ejecutamos el siguiente comando
+$ poetry env use python3
+
+El entorno virtual será almacenado en el folder Caches/pypoetry de la instalacion global de Poetry en el sistema
+
+Para cambiar de entorno virtual manejado por Poetry
+poetry env use python
+
+Para eliminar todos los entornos virtuales asociados a tu proyecto, ejecuta el siguiente comando
+$ poetry env remove --all
